@@ -1,0 +1,21 @@
+{
+  "name": "ocean-saas-operator-talk",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "slidev --open --bind 127.0.0.1",
+    "build": "slidev build",
+    "export": "slidev export --format png --output preview-export --wait 3500",
+    "export:pdf": "slidev export --output ocean-saas-operator.pdf"
+  },
+  "dependencies": {
+    "@fontsource/dm-sans": "^5.1.0",
+    "@fontsource/fira-code": "^5.1.0",
+    "@slidev/cli": "^53.1.0",
+    "@slidev/theme-default": "latest",
+    "vue": "^3.5.0"
+  },
+  "devDependencies": {
+    "playwright-chromium": "^1.49.0"
+  }
+}

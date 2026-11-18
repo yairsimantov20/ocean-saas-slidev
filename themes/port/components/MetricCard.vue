@@ -1,0 +1,57 @@
+<script setup>
+defineProps({
+  value: { type: String, required: true },
+  label: { type: String, required: true },
+  icon: { type: String, default: '' }
+})
+</script>
+
+<template>
+  <div class="metric-card">
+    <p v-if="icon" class="metric-icon">{{ icon }}</p>
+    <p class="metric-value">{{ value }}</p>
+    <p class="metric-label">{{ label }}</p>
+  </div>
+</template>
+
+<style scoped>
+.metric-card {
+  background: white;
+  border-radius: 16px;
+  padding: 1rem 1.5rem;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05);
+  text-align: center;
+}
+
+.metric-icon {
+  font-size: 1.75rem;
+  margin-bottom: 0.25rem;
+}
+
+.metric-value {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.metric-label {
+  color: #6b7280;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+}
+
+/* Dark mode */
+.dark .metric-card {
+  background: #1a1a2e;
+  border-color: #374151;
+}
+
+.dark .metric-value {
+  color: #f9fafb;
+}
+
+.dark .metric-label {
+  color: #d1d5db;
+}
+</style>

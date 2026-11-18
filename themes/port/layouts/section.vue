@@ -1,0 +1,39 @@
+<template>
+  <div class="slidev-layout section h-full flex items-center justify-center px-12">
+    <div class="flex items-center gap-12">
+      <div v-if="$frontmatter.number" class="section-number">{{ $frontmatter.number }}</div>
+      <div class="section-content">
+        <slot />
+      </div>
+    </div>
+  </div>
+</template>
+
+<style>
+.slidev-layout.section h1 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #000;
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+
+.dark .slidev-layout.section h1,
+html.dark .slidev-layout.section h1 {
+  color: #f9fafb;
+}
+
+.section-number {
+  font-size: 6rem;
+  font-weight: 800;
+  line-height: 1;
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.section-content .subtitle {
+  margin-top: 0;
+}
+</style>
