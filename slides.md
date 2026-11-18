@@ -168,7 +168,7 @@ After: integ-service calls the operator's HTTP API, which writes an OceanIntegra
 kicker: 06 · how it shipped
 ---
 
-# Swapped under <Hl>4,790</Hl> live integrations
+# Swapped under <Hl>5,373</Hl> live integrations
 
 <Stage rows="auto 1fr" gap="2rem">
   <TimelineStrip :items="[
@@ -179,8 +179,8 @@ kicker: 06 · how it shipped
     { date: 'Oct 28', label: 'Bulk cutover done', tone: 'op', big: true },
   ]" />
   <Stage cols="1.35fr 1fr 1fr 1.3fr 11rem" rows="14rem" gap="0.9rem" align="stretch">
-    <StatCard value="4,000" label="EU migrated" tone="op" size="lg" />
-    <StatCard value="790" label="US migrated" tone="op" size="lg" />
+    <StatCard value="4,400" label="EU migrated" tone="op" size="lg" />
+    <StatCard value="973" label="US migrated" tone="op" size="lg" />
     <StatCard value="0" label="downtime" tone="op" size="lg" />
     <StatCard value="2 × ~12" label="engineers × weeks" sub="plan was 1 × 15" />
     <MemeSlot name="slide-5" height="14rem" caption="Changing a tire while driving, or “Trade offer: 5,704 Argo apps for one CRD”" />
@@ -188,11 +188,9 @@ kicker: 06 · how it shipped
 </Stage>
 
 <!--
-Omri and I built it. We kicked off August 3 and merged to main August 24. It went live in prod on September 2 with nothing migrated, and the first Jira install took 16 seconds. Then one org, then Porternal, and full compatibility with the old system's features on October 26. Hadar led the bulk cutover, and by October 28 we had 4,000 EU and 790 US integrations moved, with zero downtime. About 12 weeks with two people, against a plan of one engineer for 15.
+Omri and I built it. We kicked off August 3 and merged to main August 24. It went live in prod on September 2 with nothing migrated, and the first Jira install took 16 seconds. Then one org, then Porternal, and full compatibility with the old system's features on October 26. Hadar led the bulk cutover, and by October 28 we had 4,400 EU and 973 US integrations moved, with zero downtime. About 12 weeks with two people, against a plan of one engineer for 15.
 
 (Meme: Tire change / trade offer.)
-
-Check before presenting: the report says about 1.2k EU integration Argo apps, Hadar says 4,000 EU migrated. The slide uses 4,000.
 -->
 
 ---
